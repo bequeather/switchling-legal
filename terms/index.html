@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switchling Terms of Service</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.25rem; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2em; }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 0.6em; }
+  strong { color: #111; }
+  a { color: #0b5fff; }
+  .caps { font-weight: 600; }
+  .contact-block {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 1em;
+  }
+</style>
+</head>
+<body>
+
+<h1>Switchling Platform Terms of Service</h1>
+<p class="meta">Last Updated: February 2026<br>Effective Date: February 2026</p>
+
+<h2>1. Introduction and Acceptance of Terms</h2>
+<p><strong>1.1 The Agreement:</strong> These Terms of Service ("Terms") constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you", "your", "User"), and Switchling Ltd ("Switchling", "we", "us", or "our"), concerning your access to and use of the Switchling mobile application and any related services (collectively, the "Platform").</p>
+<p><strong>1.2 Acceptance:</strong> By registering an account, bypassing the anonymous "Health Check" flow, or otherwise accessing the Platform, you agree that you have read, understood, and agree to be bound by all of these Terms. If you do not agree with all of these Terms, you are expressly prohibited from using the Platform and must discontinue use immediately.</p>
+<p><strong>1.3 Supplemental Terms:</strong> Additional policies, including our Privacy Policy and End-to-End Encryption Disclosure, are incorporated herein by reference. In the event of a conflict between these Terms and any supplemental policy, these Terms shall prevail.</p>
+
+<h2>2. Definitions</h2>
+<ul>
+  <li><strong>"Platform"</strong> refers to the Switchling mobile application and underlying backend infrastructure.</li>
+  <li><strong>"Customer"</strong> refers to an individual user utilizing the Platform to store mortgage data and connect with a Broker.</li>
+  <li><strong>"Broker"</strong> refers to an individual or firm utilizing the Platform to receive client data, subject to verification of active authorization by the Financial Conduct Authority (FCA).</li>
+  <li><strong>"Zero-Knowledge Architecture"</strong> refers to Switchling's cryptographic infrastructure (utilizing Curve25519 and AES-256-GCM) whereby user data is encrypted locally on the user's device, and Switchling possesses no ability to decrypt, read, or access the plaintext data.</li>
+  <li><strong>"Data Controller"</strong> and <strong>"Data Processor"</strong> have the meanings given to them under the UK General Data Protection Regulation (UK GDPR) and Data Protection Act 2018.</li>
+</ul>
+
+<h2>3. The Switchling Service</h2>
+<p><strong>3.1 Nature of the Service:</strong> Switchling provides a secure, encrypted digital conduit facilitating communication and document transfer between Customers seeking mortgage products and authorized Brokers.</p>
+<p><strong>3.2 Not Financial Advice:</strong> Switchling is strictly a technology provider. We do not provide financial, investment, mortgage, or legal advice. Any calculations provided in the "Health Check" (e.g., Estimated SVR, Monthly Savings Potential) are estimates based on aggregated market data and are for illustrative purposes only. Switchling does not guarantee the availability of any specific mortgage rate or product.</p>
+
+<h2>4. Zero-Knowledge Architecture &amp; Assumption of Risk</h2>
+<p class="caps">Please read this section carefully as it significantly limits our liability regarding your data.</p>
+<p><strong>4.1 Local Encryption:</strong> Switchling is built on a Zero-Knowledge Architecture. Your documents, financial data, and messages are encrypted on your device before being transmitted to our servers.</p>
+<p><strong>4.2 No Key Holding:</strong> We do not hold, store, or have access to your private cryptographic keys. Your keys are stored securely within your device's secure enclave (e.g. Apple Keychain, Android Keystore).</p>
+<p class="caps">4.3 Irrevocable Loss of Data: You expressly acknowledge and agree that if you lose access to your device, delete the app without backing up your device, or suffer corruption of your keychain, your encrypted data will be irretrievably lost.</p>
+<p><strong>4.4 No Password Reset for Encrypted Data:</strong> Switchling cannot perform a "password reset" to recover your encrypted files or messages. We are not liable for any damages, financial loss, or delays in mortgage applications resulting from your loss of cryptographic keys or device access.</p>
+
+<h2>5. Account Registration and Security</h2>
+<p><strong>5.1 Account Creation:</strong> To use certain features, you must register for an account providing accurate, current, and complete information.</p>
+<p><strong>5.2 Security:</strong> You are solely responsible for safeguarding your login credentials and the physical security of the device containing your cryptographic keys. You must immediately notify Switchling of any unauthorized use of your account.</p>
+<p><strong>5.3 App Check &amp; Device Integrity:</strong> Switchling utilizes device attestation (e.g., Firebase App Check). Attempting to access the platform via emulators, tampered devices, or unauthorized API calls is a strict violation of these Terms and will result in immediate permanent account termination.</p>
+
+<h2>6. Specific Terms for Brokers (FCA Compliance)</h2>
+<p><strong>6.1 FCA Authorization Requirement:</strong> If you register as a "Broker", you represent and warrant that you are currently authorized and regulated by the UK Financial Conduct Authority (FCA), or are an appointed representative of a directly authorized firm.</p>
+<p><strong>6.2 Verification:</strong> All Broker accounts are placed in a "Pending Verification" queue upon registration. Switchling reserves the right to cross-reference your provided FCA Individual Reference Number (IRN) and Firm Reference Number (FRN) with the official FCA Register.</p>
+<p><strong>6.3 Ongoing Compliance:</strong> You must notify us immediately if your FCA authorization is suspended, revoked, or altered. Switchling automatically monitors verification statuses and reserves the right to downgrade, suspend, or terminate Broker accounts at our sole discretion if regulatory standing is compromised.</p>
+<p><strong>6.4 Client Responsibility:</strong> Switchling merely provides the software conduit. Brokers are solely responsible for performing their own Know Your Customer (KYC), Anti-Money Laundering (AML), and suitability checks before advising on or arranging any mortgage product.</p>
+
+<h2>7. Data Protection &amp; UK GDPR</h2>
+<p><strong>7.1 Roles:</strong></p>
+<ul>
+  <li><strong>Customer Data:</strong> When a Customer uploads data, they act as the owner of that data.</li>
+  <li><strong>Broker Handling:</strong> When a Customer shares data with a Broker, the Broker acts as an independent Data Controller for the purposes of providing mortgage advice.</li>
+  <li><strong>Switchling's Role:</strong> Switchling acts solely as a Data Processor (or "Secure Conduit"), processing encrypted data blobs on behalf of the users to facilitate routing. Because Switchling cannot decrypt the data, Switchling is exempt from certain Subject Access Request (SAR) fulfillments regarding the contents of the encrypted payloads.</li>
+</ul>
+<p><strong>7.2 Data Usage:</strong> Switchling will never sell, harvest, or analyze your encrypted documents or secure messages for marketing purposes.</p>
+<p><strong>7.3 Consents:</strong> By using the platform, you agree to the versioned Privacy Policy and Data Usage agreements recorded via our Consent Service manifest upon your registration.</p>
+
+<h2>8. Prohibited Conduct</h2>
+<p>You agree not to use the Platform to:</p>
+<ul>
+  <li>Upload or transmit any material that contains software viruses, malware, or any other computer code designed to interrupt, destroy, or limit the functionality of the Platform.</li>
+  <li>Provide false, inaccurate, or misleading financial data, or impersonate any person or entity (including providing a false FCA number).</li>
+  <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the Platform or its cryptographic protocols.</li>
+  <li>Use the platform for any illegal activities, including but not limited to mortgage fraud or money laundering.</li>
+</ul>
+
+<h2>9. Intellectual Property Rights</h2>
+<p><strong>9.1 Ownership:</strong> Switchling retains all right, title, and interest in and to the Platform, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics.</p>
+<p><strong>9.2 License:</strong> We grant you a revocable, non-exclusive, non-transferable, limited license to download, install, and use the Platform strictly in accordance with these Terms.</p>
+
+<h2>10. Disclaimer of Warranties</h2>
+<p class="caps">The Platform is provided on an "as-is" and "as-available" basis. To the maximum extent permitted by UK law, Switchling disclaims all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Platform will be uninterrupted, error-free, or completely secure against all cyber threats.</p>
+
+<h2>11. Limitation of Liability</h2>
+<p class="caps">11.1 To the fullest extent permitted by law, in no event will Switchling, its directors, employees, or agents be liable to you or any third party for any direct, indirect, consequential, exemplary, incidental, special, or punitive damages, including lost profit, lost revenue, loss of data (including irretrievable encrypted data), or other damages arising from your use of the Platform.</p>
+<p><strong>11.2</strong> If we are found liable for any loss or damage, our aggregate liability to you shall not exceed the amount you paid, if any, to us during the six (6) month period prior to the cause of action arising.</p>
+
+<h2>12. Termination</h2>
+<p><strong>12.1 By You:</strong> You may terminate your account at any time by utilizing the "Delete Account" function within the app. Note that deleting your account will destroy your cryptographic keys, rendering all past shared data permanently inaccessible.</p>
+<p><strong>12.2 By Us:</strong> We may suspend or terminate your account and block access to the Platform at any time, for any reason, without notice or liability, including for breach of these Terms or suspected fraudulent/unauthorized activity.</p>
+
+<h2>13. Governing Law and Jurisdiction</h2>
+<p>These Terms and your use of the Platform are governed by and construed in accordance with the laws of England and Wales. Any dispute, controversy, or claim arising out of or relating to these Terms shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+<h2>14. Contact Us</h2>
+<p>For questions, notices, or regulatory inquiries regarding these Terms, please contact us at:</p>
+<div class="contact-block">
+  <p><strong>Switchling Ltd</strong><br>
+  2 Darlington Road<br>
+  Heighington<br>
+  United Kingdom</p>
+  <p>Email: <a href="mailto:richardmac283@gmail.com">richardmac283@gmail.com</a></p>
+</div>
+
+</body>
+</html>

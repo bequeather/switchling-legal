@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switchling Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.25rem; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2em; }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 0.6em; }
+  strong { color: #111; }
+  a { color: #0b5fff; }
+  .contact-block {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 1em;
+  }
+</style>
+</head>
+<body>
+
+<h1>Switchling Privacy Policy</h1>
+<p class="meta">Last Updated: February 2026<br>Effective Date: February 2026</p>
+
+<h2>1. Introduction</h2>
+<p>Switchling Ltd ("Switchling", "we", "us", or "our") is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your personal data when you use the Switchling mobile application and related services (the "Platform").</p>
+<p>This policy is designed to comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+
+<h2>2. Our Role in Data Processing</h2>
+<p>Because of our Zero-Knowledge Architecture, our role under the UK GDPR changes depending on the type of data:</p>
+<ul>
+  <li><strong>Data Controller:</strong> We act as a Data Controller for your basic account information, device metadata, and anonymous platform analytics.</li>
+  <li><strong>Data Processor (The "Secure Conduit"):</strong> For your sensitive mortgage data, financial documents, and secure messages ("Encrypted Payloads"), we act strictly as a Data Processor. This data is encrypted on your device. We cannot read, decrypt, or access this data. When you share this data with a regulated Broker, that Broker becomes an independent Data Controller of the decrypted information.</li>
+</ul>
+
+<h2>3. The Data We Collect</h2>
+<p><strong>A. Unencrypted Data (Visible to Switchling)</strong></p>
+<ul>
+  <li><strong>Identity &amp; Contact Data:</strong> Email address, user type (Customer or Broker), and registration timestamps.</li>
+  <li><strong>Broker Verification Data:</strong> First name, last name, phone number, FCA Individual Reference Number (IRN), and Firm Reference Number (FRN) required for regulatory verification.</li>
+  <li><strong>Health Check Data:</strong> If you use our Health Check tool, we process the lender name, estimated balance, current rate, product end date, and remaining term to calculate potential savings.</li>
+  <li><strong>Technical &amp; Device Data:</strong> Firebase Cloud Messaging (FCM) tokens for push notifications, device attestation markers (App Check), and basic system crash logs.</li>
+  <li><strong>Cryptographic Public Keys:</strong> We store your Public Key (X25519) to facilitate secure routing. A Public Key cannot be used to decrypt your data.</li>
+</ul>
+<p><strong>B. Encrypted Payloads (NOT Visible to Switchling)</strong></p>
+<ul>
+  <li><strong>Mortgage Applications &amp; Documents:</strong> Uploaded PDFs, identity documents, and completed mortgage application forms.</li>
+  <li><strong>Secure Communications:</strong> Messages sent between Customers and Brokers.</li>
+</ul>
+<p>Note: These items are encrypted using AES-256-GCM locally on your device prior to transmission. We only store the resulting ciphertext.</p>
+
+<h2>4. Lawful Basis for Processing</h2>
+<p>Under UK GDPR, we rely on the following lawful bases to process your Unencrypted Data:</p>
+<ul>
+  <li><strong>Performance of a Contract:</strong> To register your account, provide the platform routing services, and deliver push notifications.</li>
+  <li><strong>Legal Obligation:</strong> To verify Broker FCA authorization and maintain mandatory audit logs for regulatory compliance.</li>
+  <li><strong>Legitimate Interests:</strong> To prevent fraud, ensure platform security via device attestation, and improve the technical stability of our App.</li>
+</ul>
+
+<h2>5. How We Share Your Data</h2>
+<p>We do not sell your personal data. We only share data in the following circumstances:</p>
+<ul>
+  <li><strong>With Authorized Brokers:</strong> When a Customer explicitly chooses to connect with a Broker, the Platform facilitates the exchange of cryptographic keys, allowing the Broker to decrypt the Customer's Encrypted Payloads.</li>
+  <li><strong>With Cloud Infrastructure Providers:</strong> We use Google Firebase (Google Cloud Platform) to host our databases and authenticate users. Data is stored in secure, European-based server locations in compliance with UK GDPR data transfer rules.</li>
+  <li><strong>With Regulators / Law Enforcement:</strong> We may share Unencrypted Data (such as user logs or Broker FCA details) if strictly required by the FCA, law enforcement, or a valid court order. Note: We cannot provide decrypted versions of Encrypted Payloads to law enforcement as we do not possess the decryption keys.</li>
+</ul>
+
+<h2>6. Data Retention &amp; Your Rights</h2>
+<p><strong>Retention:</strong> We retain your account data for as long as your account is active.</p>
+<p><strong>Your Rights:</strong> Under UK GDPR, you have the right to:</p>
+<ul>
+  <li><strong>Access:</strong> Request a copy of the Unencrypted Data we hold about you.</li>
+  <li><strong>Erasure ("Right to be Forgotten"):</strong> You may delete your account at any time. Warning: Deleting your account will destroy your cryptographic keys. As a result, any Encrypted Payloads remaining on our servers will be permanently rendered unreadable, which satisfies your right to erasure regarding that data.</li>
+  <li><strong>Rectification / Restriction / Objection:</strong> You may request corrections to your profile or object to certain processing.</li>
+</ul>
+
+<h2>7. Contact Us</h2>
+<div class="contact-block">
+  <p><strong>Switchling Ltd</strong><br>
+  2 Darlington Road<br>
+  Heighington<br>
+  United Kingdom</p>
+  <p>Email: <a href="mailto:richardmac283@gmail.com">richardmac283@gmail.com</a></p>
+</div>
+<p>To exercise your rights, please contact us at the address above. Please note that because we cannot read your Encrypted Payloads, Subject Access Requests (SARs) regarding the contents of your mortgage documents must be directed to your Broker.</p>
+
+</body>
+</html>
