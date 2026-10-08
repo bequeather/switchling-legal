@@ -33,68 +33,95 @@
 <body>
 
 <h1>Switchling Privacy Policy</h1>
-<p class="meta">Last Updated: February 2026<br>Effective Date: February 2026</p>
+<p class="meta">Last Updated: October 2026<br>Effective Date: October 2026</p>
 
 <h2>1. Introduction</h2>
-<p>Switchling Ltd ("Switchling", "we", "us", or "our") is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your personal data when you use the Switchling mobile application and related services (the "Platform").</p>
-<p>This policy is designed to comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+<p>Switchling Ltd ("Switchling", "we", "us", or "our") is committed to protecting your personal data. This Privacy Policy explains what personal data we collect when you use the Switchling mobile application and related services (the "Platform"), what we do with it, who we share it with, and the rights you have.</p>
+<p>This policy is designed to comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. It is a notice telling you how your data is handled. The contract between you and Switchling is our <a href="/switchling-legal/terms/">Terms of Service</a>.</p>
+<p>In this policy a <strong>"Customer"</strong> is a homeowner using the Platform, and a <strong>"Broker"</strong> is a mortgage broker using it.</p>
 
 <h2>2. Our Role in Data Processing</h2>
-<p>Because of our Zero-Knowledge Architecture, our role under the UK GDPR changes depending on the type of data:</p>
+<p>Because of our Zero-Knowledge Architecture, our role under the UK GDPR depends on the type of data:</p>
 <ul>
-  <li><strong>Data Controller:</strong> We act as a Data Controller for your basic account information, device metadata, and anonymous platform analytics.</li>
-  <li><strong>Data Processor (The "Secure Conduit"):</strong> For your sensitive mortgage data, financial documents, and secure messages ("Encrypted Payloads"), we act strictly as a Data Processor. This data is encrypted on your device. We cannot read, decrypt, or access this data. When you share this data with a regulated Broker, that Broker becomes an independent Data Controller of the decrypted information.</li>
+  <li><strong>Data Controller:</strong> We are the Data Controller of the information we are able to read. That is your account and contact details, your Health Check details, Broker verification and billing details, and technical and device data. Section 3A lists it in full.</li>
+  <li><strong>Data Processor (the "Secure Conduit"):</strong> For your mortgage application, your documents and your secure messages ("Encrypted Payloads"), we act strictly as a Data Processor. This data is encrypted on your device. We cannot read, decrypt, or access it.</li>
+  <li><strong>Brokers:</strong> When a Customer's Encrypted Payloads are shared with a Broker, that Broker becomes an independent Data Controller of the decrypted information and is responsible for handling it lawfully.</li>
 </ul>
 
 <h2>3. The Data We Collect</h2>
-<p><strong>A. Unencrypted Data (Visible to Switchling)</strong></p>
+<p><strong>A. Data Switchling can read</strong></p>
 <ul>
-  <li><strong>Identity &amp; Contact Data:</strong> Email address, user type (Customer or Broker), and registration timestamps.</li>
-  <li><strong>Broker Verification Data:</strong> First name, last name, phone number, FCA Individual Reference Number (IRN), and Firm Reference Number (FRN) required for regulatory verification.</li>
-  <li><strong>Health Check Data:</strong> If you use our Health Check tool, we process the lender name, estimated balance, current rate, product end date, and remaining term to calculate potential savings.</li>
-  <li><strong>Technical &amp; Device Data:</strong> Firebase Cloud Messaging (FCM) tokens for push notifications, device attestation markers (App Check), and basic system crash logs.</li>
-  <li><strong>Cryptographic Public Keys:</strong> We store your Public Key (X25519) to facilitate secure routing. A Public Key cannot be used to decrypt your data.</li>
+  <li><strong>Account &amp; Contact Data:</strong> Your email address, your name where you give it, whether you are a Customer or a Broker, and when you registered and last signed in.</li>
+  <li><strong>Health Check Data:</strong> If you use the Health Check, your lender, estimated balance, current rate, the date your current rate ends and your remaining term, and any Broker code you enter. We use these to show your timeline and to work out illustrative figures.</li>
+  <li><strong>Application Summary:</strong> A small amount of information about each mortgage application is kept outside the encrypted part so that the service can work: the applicant's name, the loan amount, the lender, and the application's status.</li>
+  <li><strong>Broker Verification Data:</strong> For Brokers, first name, last name, phone number, firm, FCA Individual Reference Number (IRN) and Firm Reference Number (FRN), and the outcome of our verification.</li>
+  <li><strong>Broker Marketplace &amp; Billing Data:</strong> For Brokers, the bids you place, the leads you win, the charges and invoices raised, a reference to your customer record with our payment provider, the brand, last four digits and expiry date of your saved card, and a record of the card-charge authorisation you accepted. We never receive or store your full card number.</li>
+  <li><strong>Activity Records:</strong> A log of actions taken on your account, such as signing in, accepting our Terms, or an application being viewed. These record that something happened and when. They do not contain the contents of your application, documents or messages.</li>
+  <li><strong>Records of Acceptance:</strong> Which version of our Terms and onboarding notices you accepted, and when.</li>
+  <li><strong>Support Requests:</strong> Anything you send us when you ask for help.</li>
+  <li><strong>Technical &amp; Device Data:</strong> Firebase Cloud Messaging (FCM) tokens for push notifications, device attestation markers (App Check), and basic technical logs.</li>
+  <li><strong>Cryptographic Public Keys:</strong> We store your Public Key (X25519) so that data can be encrypted for you. A Public Key cannot be used to decrypt your data.</li>
 </ul>
-<p><strong>B. Encrypted Payloads (NOT Visible to Switchling)</strong></p>
+<p><strong>B. Encrypted Payloads (NOT readable by Switchling)</strong></p>
 <ul>
-  <li><strong>Mortgage Applications &amp; Documents:</strong> Uploaded PDFs, identity documents, and completed mortgage application forms.</li>
+  <li><strong>Mortgage Applications &amp; Documents:</strong> The details of your mortgage application, including income, employment and property details, and any documents you upload such as identity documents and payslips.</li>
   <li><strong>Secure Communications:</strong> Messages sent between Customers and Brokers.</li>
 </ul>
-<p>Note: These items are encrypted using AES-256-GCM locally on your device prior to transmission. We only store the resulting ciphertext.</p>
+<p>These items are encrypted using AES-256-GCM on your device before they are sent. We store only the resulting ciphertext.</p>
 
-<h2>4. Lawful Basis for Processing</h2>
-<p>Under UK GDPR, we rely on the following lawful bases to process your Unencrypted Data:</p>
+<h2>4. How We Use Your Data and Our Lawful Basis</h2>
+<p>Under UK GDPR we rely on the following lawful bases to process the data we can read:</p>
 <ul>
-  <li><strong>Performance of a Contract:</strong> To register your account, provide the platform routing services, and deliver push notifications.</li>
-  <li><strong>Legal Obligation:</strong> To verify Broker FCA authorization and maintain mandatory audit logs for regulatory compliance.</li>
-  <li><strong>Legitimate Interests:</strong> To prevent fraud, ensure platform security via device attestation, and improve the technical stability of our App.</li>
+  <li><strong>Performance of a Contract:</strong> To create and run your account, to show your Health Check timeline, to introduce Customers to Brokers (including showing a Mortgage Summary to verified Brokers as described in section 5), to send you notifications about your account, and, for Brokers, to run the marketplace and take payment for leads.</li>
+  <li><strong>Legitimate Interests:</strong> To verify that Brokers are authorised by checking the details they give us against the FCA Register, to keep activity records, to prevent fraud and protect the Platform through device attestation, and to keep the app stable and secure. We have considered these interests against your rights and believe they are proportionate.</li>
+  <li><strong>Legal Obligation:</strong> To keep the tax and accounting records the law requires of charges and invoices, and to respond to lawful requests from regulators, courts or law enforcement.</li>
 </ul>
+<p>We do not use your data for advertising. We do not make decisions about you by automated means that have a legal or similarly significant effect on you.</p>
 
 <h2>5. How We Share Your Data</h2>
-<p>We do not sell your personal data. We only share data in the following circumstances:</p>
+<p>We do not sell your personal data. We share data only in the following circumstances:</p>
 <ul>
-  <li><strong>With Authorized Brokers:</strong> When a Customer explicitly chooses to connect with a Broker, the Platform facilitates the exchange of cryptographic keys, allowing the Broker to decrypt the Customer's Encrypted Payloads.</li>
-  <li><strong>With Cloud Infrastructure Providers:</strong> We use Google Firebase (Google Cloud Platform) to host our databases and authenticate users. Data is stored in secure, European-based server locations in compliance with UK GDPR data transfer rules.</li>
-  <li><strong>With Regulators / Law Enforcement:</strong> We may share Unencrypted Data (such as user logs or Broker FCA details) if strictly required by the FCA, law enforcement, or a valid court order. Note: We cannot provide decrypted versions of Encrypted Payloads to law enforcement as we do not possess the decryption keys.</li>
+  <li><strong>With verified Brokers, as a Mortgage Summary:</strong> So that Brokers can offer to act for a Customer, verified Brokers are shown a summary of that Customer's mortgage: lender, outstanding balance, current rate, remaining term and the date the current rate ends. The summary shown to them does not include the Customer's name or contact details.</li>
+  <li><strong>With the Broker you are connected to:</strong> When a Broker has been connected to a Customer and the Customer next opens the app, the Customer's device shares the cryptographic key to their application with that Broker. From then on the Broker can read the Customer's application, documents and messages with them, and can contact the Customer through the Platform. If a Customer entered a Broker's code, their details are sent to that Broker or their firm.</li>
+  <li><strong>With Cloud Infrastructure Providers:</strong> We use Google Firebase (Google Cloud Platform) to host our databases, authenticate users, run our server functions and deliver push notifications.</li>
+  <li><strong>With our Payment Provider (Brokers only):</strong> Broker card payments and invoices are handled by Stripe. Card details are entered on a page hosted by Stripe and are held by Stripe under its own privacy policy. We share the Broker's email address and the amounts due with Stripe so that it can take payment and send invoices. Customers are never asked for payment details.</li>
+  <li><strong>With our AI Provider (Broker assistant):</strong> Brokers can use a drafting assistant inside the app. When they do, the Broker's question is sent to our AI provider, Anthropic, to generate a response, together with a summary of the relevant application's figures (such as loan amount, rate, lender and income) from which the Customer's name, address and contact details have been removed on the Broker's device first.</li>
+  <li><strong>With Regulators / Law Enforcement:</strong> We may share data we can read (such as activity records or Broker FCA details) if required by the FCA, law enforcement, or a valid court order. We cannot provide decrypted versions of Encrypted Payloads, as we do not possess the decryption keys.</li>
 </ul>
 
-<h2>6. Data Retention &amp; Your Rights</h2>
-<p><strong>Retention:</strong> We retain your account data for as long as your account is active.</p>
-<p><strong>Your Rights:</strong> Under UK GDPR, you have the right to:</p>
+<h2>6. Where Your Data Is Processed</h2>
+<p>Our providers may process data outside the United Kingdom, including in the United States. Where personal data is transferred outside the UK, we rely on safeguards recognised under UK data protection law, such as UK adequacy regulations or the International Data Transfer Addendum to the standard contractual clauses. Encrypted Payloads remain encrypted wherever they are stored.</p>
+
+<h2>7. Data Retention</h2>
 <ul>
-  <li><strong>Access:</strong> Request a copy of the Unencrypted Data we hold about you.</li>
-  <li><strong>Erasure ("Right to be Forgotten"):</strong> You may delete your account at any time. Warning: Deleting your account will destroy your cryptographic keys. As a result, any Encrypted Payloads remaining on our servers will be permanently rendered unreadable, which satisfies your right to erasure regarding that data.</li>
-  <li><strong>Rectification / Restriction / Objection:</strong> You may request corrections to your profile or object to certain processing.</li>
+  <li><strong>Account data:</strong> We keep your account data for as long as your account is open.</li>
+  <li><strong>When you delete your account:</strong> Your account data is deleted and your cryptographic keys are destroyed. Any Encrypted Payloads that remain on our servers are permanently unreadable.</li>
+  <li><strong>Billing records:</strong> Records of charges and invoices are kept for as long as tax and accounting law requires, even after a Broker account is closed.</li>
+  <li><strong>Data held by a Broker:</strong> Information a Broker has received about you is held by that Broker as a Data Controller, and is kept according to their own obligations, not ours.</li>
 </ul>
 
-<h2>7. Contact Us</h2>
+<h2>8. Your Rights</h2>
+<p>Under UK GDPR, you have the right to:</p>
+<ul>
+  <li><strong>Access:</strong> Request a copy of the data we can read about you. You can also export it from the app under Account &rarr; Privacy &amp; Data.</li>
+  <li><strong>Rectification:</strong> Ask us to correct data that is inaccurate. You can change most details yourself in the app.</li>
+  <li><strong>Erasure ("Right to be Forgotten"):</strong> Delete your account at any time from the app. Warning: deleting your account destroys your cryptographic keys, so any Encrypted Payloads remaining on our servers are permanently unreadable, which satisfies your right to erasure for that data.</li>
+  <li><strong>Restriction and Objection:</strong> Ask us to limit how we use your data, or object to processing we carry out on the basis of our legitimate interests.</li>
+  <li><strong>Portability:</strong> Receive the data you gave us in a commonly used format.</li>
+</ul>
+<p>To exercise any of these rights, contact us using the details in section 10. Because we cannot read your Encrypted Payloads, requests about the contents of your mortgage application or documents must be made to your Broker.</p>
+<p><strong>Complaints:</strong> If you are unhappy with how we have handled your data, please tell us first so we can try to put it right. You also have the right to complain to the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a> or on 0303 123 1113.</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>We may update this policy. When we make a change that affects how your data is used, we will tell you in the app. The date at the top of this page shows when it was last updated.</p>
+
+<h2>10. Contact Us</h2>
 <div class="contact-block">
   <p><strong>Switchling Ltd</strong><br>
   2 Darlington Road<br>
   Heighington<br>
   United Kingdom</p>
 <p>Email: <a href="mailto:richard@switchling.org">richard@switchling.org</a></p></div>
-<p>To exercise your rights, please contact us at the address above. Please note that because we cannot read your Encrypted Payloads, Subject Access Requests (SARs) regarding the contents of your mortgage documents must be directed to your Broker.</p>
 
 </body>
 </html>
